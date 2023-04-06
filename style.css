@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: blanchedalmond;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 120px;
+  text-align: center;
+}
+
+.building-container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+#canvas {
+  width: 480px;
+  height: 300px;
+  display: flex;
+  /* align-items: center; */
+  background-color: blue;
+  border-radius: 25px;
+  justify-content: flex-end;
+  flex-direction: column;
+  
+}
+
+#moon-container {
+  background-color: rgb(238, 238, 66);
+  width: 15%;
+  height: 24%;
+  border-radius: 50%;
+  margin-left: 30px;
+  margin-top: 10px;
+  position: relative;
+  align-items: left !important;
+}
+
+.building-1 {
+  width: 20%;
+  height: 100%;
+  background-color: gray;
+}
+
+.building-2 {
+  width: 20%;
+  height: 80%;
+  background-color: rgb(0, 0, 0);
+}
+
+.building-3 {
+  width: 20%;
+  height: 60%;
+  background-color: gray;
+}
+
+
+
+#grass-container {
+  width: 100%;
+  height: 20%;
+  background-color: green;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 20;
+}
+
+.window {
+  width: 30px;
+  height: 20px;
+  background-color: aqua;
+  margin: 8px;
+}
+
+@media only screen and (max-width: 479px) and (min-width: 319px)  {
+  body {
+    background-color: red; 
+  }
+  #canvas {
+    width: 310px;
+    height: 300px;
+    background-color: blue;
+    border-radius: 25px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  #canvas {
+    width: 410px;
+    height: 300px;
+    background-color: blue;
+    border-radius: 25px;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  #canvas {
+    width: 610px;
+    height: 400px;
+    background-color: blue;
+    border-radius: 25px;
+  }
+}
